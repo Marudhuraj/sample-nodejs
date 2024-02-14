@@ -16,7 +16,7 @@ app.get("/", (req, res, next) => {
 app.get("/data", (req, res, next) => {
   res.status(200).json({
     data: {},
-    message: "success",
+    message: "success data",
   });
 });
 
