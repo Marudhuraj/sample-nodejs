@@ -1,12 +1,11 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 
-const PORT = process.env.PORT || 3000;
 const app = express();
 
-app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
 app.get("/", (req, res, next) => {
   res.status(200).json({
@@ -21,6 +20,6 @@ app.get("/data", (req, res, next) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`Sample nodejs app running on port: ${PORT}`);
+app.listen(8080, () => {
+  console.log(`Sample nodejs app running on port: 8080`);
 });
